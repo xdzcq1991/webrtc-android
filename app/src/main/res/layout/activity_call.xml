@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/frame"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <org.webrtc.SurfaceViewRenderer
+    android:id="@+id/fullscreen_video_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" />
+
+  <LinearLayout
+    android:id="@+id/palette_banner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <com.example.kingo.rtcclient.view.PaletteView
+      android:id="@+id/palette"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_weight="1"
+      android:background="#ffffff" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/hang_up"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_gravity="right|top"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/exit"
+    android:padding="5dp"
+    android:text="" />
+
+  <TextView
+    android:id="@+id/paint_tools_toggler"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_gravity="right|bottom"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/tool_switch_off"
+    android:padding="5dp"
+    tools:text="" />
+
+  <com.example.kingo.rtcclient.view.DragScaleSurfaceViewRenderer
+    android:id="@+id/pip_video_view"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:visibility="gone" />
+
+  <TextView
+    android:id="@+id/speed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|center"
+    android:layout_marginRight="10dp"
+    android:textColor="#007dff"
+    android:textSize="16dp"
+    tools:text="0.0" />
+
+</FrameLayout>

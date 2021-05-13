@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/pop_banner"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@color/transparent"
+  android:orientation="horizontal">
+
+  <com.example.kingo.rtcclient.view.CircleButton
+    android:id="@+id/eraser"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:bg_color="#EFEEFD"
+    app:border_color="#9991F0"
+    app:icon="@drawable/eraser"
+    app:icon_switch="@drawable/eraser_w"
+    app:value="橡皮擦" />
+
+  <com.example.kingo.rtcclient.view.CircleButton
+    android:id="@+id/mode_line"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:bg_color="#ECF9FE"
+    app:border_color="#27A0CD"
+    app:icon="@drawable/s_line"
+    app:icon_switch="@drawable/s_line_w"
+    app:value="直线" />
+
+  <com.example.kingo.rtcclient.view.CircleButton
+    android:id="@+id/pen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:bg_color="#F0F9EB"
+    app:border_color="#67C23A"
+    app:icon="@drawable/line"
+    app:icon_switch="@drawable/line_w"
+    app:used="true"
+    app:value="曲线" />
+
+  <com.example.kingo.rtcclient.view.CircleButton
+    android:id="@+id/thin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:bg_color="#FDF6EC"
+    app:border_color="#E6A23C"
+    app:icon="@drawable/thin"
+    app:icon_switch="@drawable/thin_w"
+    app:used="true"
+    app:value="细" />
+
+  <com.example.kingo.rtcclient.view.CircleButton
+    android:id="@+id/thick"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:bg_color="#EDFFFB"
+    app:border_color="#59C2AD"
+    app:icon="@drawable/thick"
+    app:icon_switch="@drawable/thick_w"
+    app:value="粗" />
+
+  <com.example.kingo.rtcclient.view.CircleButton
+    android:id="@+id/clear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:bg_color="#FEF0F0"
+    app:border_color="#F56C6C"
+    app:icon="@drawable/clear2"
+    app:icon_switch="@drawable/clear_w"
+    app:value="清屏" />
+
+  <com.example.kingo.rtcclient.view.CircleButton
+    android:id="@+id/mode_circle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:bg_color="#EEF4FF"
+    app:border_color="#608EEB"
+    app:icon="@drawable/circle1"
+    app:icon_switch="@drawable/circle_w"
+    app:value="圆" />
+
+  <com.example.kingo.rtcclient.view.CircleButton
+    android:id="@+id/mode_rect"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:bg_color="#FFEFEC"
+    app:border_color="#F35734"
+    app:icon="@drawable/rect"
+    app:icon_switch="@drawable/rect_w"
+    app:value="矩形" />
+
+  <ImageView
+    android:id="@+id/undo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:src="@drawable/undo"
+    android:textColor="#333"
+    android:textSize="14dp"
+    android:visibility="gone" />
+
+  <ImageView
+    android:id="@+id/redo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:src="@drawable/redo"
+    android:textColor="#333"
+    android:textSize="14dp"
+    android:visibility="gone" />
+
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:src="@drawable/pen"
+    android:textColor="#333"
+    android:textSize="14dp"
+    android:visibility="gone"/>
+
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:src="@drawable/eraser1"
+    android:textColor="#333"
+    android:textSize="14dp"
+    android:visibility="gone" />
+
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:src="@drawable/clear1"
+    android:textColor="#333"
+    android:textSize="14dp"
+    android:visibility="gone" />
+
+  <TextView
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp"
+    android:text="粗"
+    android:textColor="#333"
+    android:textSize="16dp" />
+
+  <TextView
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp"
+    android:text="细"
+    android:textColor="#333"
+    android:textSize="16dp" />
+
+  <TextView
+    android:id="@+id/black"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp"
+    android:text="黑"
+    android:textColor="#333"
+    android:textSize="16dp"
+    android:visibility="gone"/>
+
+  <TextView
+    android:id="@+id/red"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp"
+    android:text="红"
+    android:textColor="#e81717"
+    android:textSize="16dp"
+    android:visibility="gone"/>
+
+</LinearLayout>

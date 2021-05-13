@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.kingo.rtcclient.LoginActivity">
+
+    <Button android:layout_width="wrap_content"
+              android:id="@+id/collect"
+              android:text="15211073659-胡逸心"
+              android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="wrap_content"
+              android:id="@+id/collect1"
+              android:text="13755184967-张立"
+              android:layout_marginTop="50dp"
+              android:layout_height="wrap_content"/>
+
+  <Button android:layout_width="wrap_content"
+          android:id="@+id/collect2"
+          android:text="13627318325-谭益"
+          android:layout_height="wrap_content"/>
+
+  <Button android:layout_width="wrap_content"
+          android:id="@+id/collect3"
+          android:text="17711649645-刘皇"
+          android:layout_marginTop="50dp"
+          android:layout_height="wrap_content"/>
+
+  <EditText
+    android:id="@+id/input"
+    android:layout_width="200dp"
+    android:hint="账号"
+    android:layout_height="wrap_content"/>
+
+  <EditText
+    android:id="@+id/input_pwd"
+    android:layout_width="200dp"
+    android:hint="密码"
+    android:layout_height="wrap_content"/>
+
+
+  <Button android:layout_width="wrap_content"
+    android:id="@+id/login_btn"
+    android:text="登录"
+    android:layout_marginTop="50dp"
+    android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
